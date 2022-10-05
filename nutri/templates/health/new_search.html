@@ -1,0 +1,24 @@
+{% extends 'landing.html' %}
+
+<h2>Hey</h2>
+{% block content %}
+<table class="responsive-table">
+  <thead>
+    <tr>
+        <th>Disease</th>
+        <th>Symptoms</th>
+        <th>Diet</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>{{ search }}</td>
+      <td>{{ disease_symptoms }}</td>
+      <td>{{ disease_diet }}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+{% endblock %}
